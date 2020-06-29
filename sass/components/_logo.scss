@@ -1,4 +1,4 @@
-.logo {color: var(--title-text-color);
+.logo {color: $title-text-color;
     font-family: Raleway, cursive; 
     font-weight: bold;
     font-size: 26px;
@@ -7,4 +7,4 @@
     text-decoration: none;
 }
 
-span{color: var(--accent);}
+span{color: $accent;}

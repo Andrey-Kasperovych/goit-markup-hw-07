@@ -34,7 +34,7 @@
     margin-bottom: 20px;
 }
 
-.tehnokryaki h2{color: var(--title-text-color);
+.tehnokryaki h2{color: $title-text-color;
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
@@ -47,7 +47,7 @@
     margin-bottom: 4px;
 }
 
-.tehnokryaki p{color: var(--primary-text-color);
+.tehnokryaki p{color: $primary-text-color;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;  
@@ -74,7 +74,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     background-color: rgba(33, 150, 243, 0.5);
-    color: #ffffff;
+    color: $primary-white-color;
     position: absolute;
     opacity: 1;
     transition: 700ms opacity linear;

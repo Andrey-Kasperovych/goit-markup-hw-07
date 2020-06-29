@@ -11,11 +11,13 @@
     display: flex;
     align-items: center;
     margin-left: 12px;
+
+      a{
+      text-indent: 5px;
+    }
   }
   
-  .checkbox-label a{
-    text-indent: 5px;
-  }
+  
   
   
   
@@ -38,9 +40,9 @@
   }
   
   .checkbox:checked + .checkbox-icon{
-    background-color: #2196F3;
+    background-color: $accent;
     background-image: url(../images/full-check.svg);
     background-size: contain;
     background-origin: border-box;
-    border-color: #2196F3;
+    border-color: $accent;
   }

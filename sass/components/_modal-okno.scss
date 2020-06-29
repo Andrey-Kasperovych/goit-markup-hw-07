@@ -36,7 +36,7 @@ fieldset{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
-    background-color: #fff;
+    background-color: $primary-white-color;
   }
   
   .form h2{
@@ -64,12 +64,12 @@ fieldset{
   .form-input:not(:placeholder-shown) + .form-label,
   .form-field-1:focus-within > .form-label {
     transform: translate(-26px, -40px);
-    color: #2196F3;  
+    color: $accent;  
   }
   
   .form-input:focus, 
    textarea:focus{
-    border: 1px solid #2196F3;
+    border: 1px solid $accent;
   }
   
   
@@ -102,7 +102,7 @@ fieldset{
     left: 42px;
     transform: translateY(-50%);
     transition: transform 250ms linear;
-    color: #757575;  
+    color: $primary-text-color;  
   }
   
   .form-label-comment{
@@ -120,13 +120,13 @@ fieldset{
     left: 16px;
     transform: translateY(-50%);
     transition: transform 250ms linear;
-    color: #757575; }
+    color: $primary-text-color; }
   
     .form-field textarea:focus + .form-label-comment,
     .form-field textarea:not(:placeholder-shown) + .form-label-comment
     {
       transform: translate(-26px, -40px);  
-      color: #2196F3;
+      color: $accent;
     }
 
     .icon{
@@ -173,7 +173,7 @@ fieldset{
       } 
 
       .form-field-1:focus-within > .form-input{
-        border: 1px solid #2196F3;
+        border: 1px solid $accent;
       }
       
       /* Избавляемся от id */

@@ -9,13 +9,14 @@
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+
+     .item {
+        margin-right: 8px;
+    
+    }
+    
+     .item:nth-child(5n) {
+        margin-right: 0;
+    }
 }
 
-.tech-button .item {
-    margin-right: 8px;
-
-}
-
-.tech-button .item:nth-child(5n) {
-    margin-right: 0;
-}

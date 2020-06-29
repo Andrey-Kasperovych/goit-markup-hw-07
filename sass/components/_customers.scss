@@ -1,8 +1,7 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    /*outline: 1px solid tomato;*/
-    }
+}
 
 .container {
     width: 1200px;
@@ -13,11 +12,11 @@
 
 }
 
-.team-title, .team-list h3 {color: var(--title-text-color);}
+.team-title, .team-list h3 {color: $title-text-color;}
 
 
 
-.customers {color: var(--title-text-color);
+.customers {color: $title-text-color;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.2;
@@ -32,38 +31,41 @@
     list-style: none;
 }    
 
-.customers-list .item {
-    width: 170px;
-    height: 90px;
-    border-radius: 4px;
-    margin-right: 30px;
-    border: 1px solid #AFB1B8;
-    --color2: #afb1b8;
+.customers-list  {
+
+    .item{width: 170px;
+        height: 90px;
+        border-radius: 4px;
+        margin-right: 30px;
+        border: 1px solid $border;
+        --color2: #{$border};}
+    
+
+     .item:hover{
+        border: 1px solid $accent;;
+        --color2: #{$accent};
+        --color3: #{$accent};
+        @extend %transition;
+    }
+    
+    
+    
+     .item a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 90px;
+    }
+    
+     .button-icon{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     .item:nth-child(6n) {
+        margin-right: 0;
+    }
 }
 
-.customers-list .item:hover{
-    border: 1px solid #2196F3;;
-    --color2: #2196F3;
-    --color3: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-.customers-list .item a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 90px;
-}
-
-.customers-list .button-icon{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.customers-list .item:nth-child(6n) {
-    margin-right: 0;
-}
